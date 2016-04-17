@@ -1,0 +1,11 @@
+---
+applications:
+- name: discovery-service
+  host: discovery-service-tsonyo
+  memory: 512M
+  instances: 1
+  path: target/discovery-service-0.0.1-SNAPSHOT.jar
+env:
+  server_port: 8080
+ # config_server_uri: https://configserver.cf.sap.hana.ondemand.com:8080/
+  config_server_uri: http://config-service-tsonyo.bosh-lite.com

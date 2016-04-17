@@ -1,0 +1,4 @@
+spring.application.name=random-words-service
+server.port=${server_port}
+spring.cloud.config.uri=${config_server_uri}
+eureka.client.serviceUrl.defaultZone=http://${eureka_hostname:localhost}:${eureka_port:80}/eureka

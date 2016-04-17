@@ -1,0 +1,9 @@
+---
+applications:
+- name: configserver
+  host: config-service-tsonyo
+  memory: 256M
+  instances: 1
+  path: target/config-server-0.0.1-SNAPSHOT.jar
+env:
+  git_uri: https://github.com/tsonangithub/democonfig/
