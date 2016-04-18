@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>demo</title>
+</head>
+<body>
+	<script src="jquery-2.2.3.min.js"></script>
+	<script type="text/javascript" >  
+		
+		function getRandom() {
+			$.get("http://localhost:8585/random").done(function(response) {
+				$("#randomTextBox").val(response);
+			});
+		}
+	</script>
+	
+	<button id="random" onClick="getRandom()">Generate Random</button>
+	<br>
+	<input id="randomTextBox" type="text" readonly="readonly" />
+	
+</body>
+</html>
