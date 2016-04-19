@@ -1,0 +1,10 @@
+---
+applications:
+- name: test-ui
+  host: test-ui-tsonyo
+  memory: 256M
+  instances: 1
+  path: target/test-ui.war
+env:
+  api_gateway_port: 80
+  api_gateway_host: http://api-gateway-tsonyo.bosh-lite.com

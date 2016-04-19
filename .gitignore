@@ -45,3 +45,9 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+TestUI/target/test-ui.war
+TestUI/target/test-ui/index.jsp
+TestUI/target/test-ui/jquery-2.2.3.min.js
+TestUI/target/maven-archiver/pom.properties
+TestUI/target/test-ui/not_index.html
+TestUI/target/test-ui/WEB-INF/web.xml

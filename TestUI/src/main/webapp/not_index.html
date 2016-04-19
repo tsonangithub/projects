@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>demo</title>
+</head>
+<body>
+<script src="jquery-2.2.3.min.js"></script>
+	<script type="text/javascript">  
+		
+		function substring() {
+			var inputString=$("#inputString").val();
+			var start =$("#start").val();
+			var end =$("#end").val();
+$("#resultSubstring").val(inputString + " " +start+ " " + end);
+
+		}
+		
+	</script>
+
+
+	<input id="inputString" type="text" style="width : 20%;" />
+	<label for="start">Start:</label>
+	<input id="start" type="text" style="width : 2em;" />
+	<label for="end">End:</label>
+	<input id="end" type="text" style="width : 2em;" />
+	<button onClick="substring()">Substring</button>
+	<br>
+	<input id="resultSubstring" type="text" style="width : 50%;" />
+
+</body>
+</html>
+	
+</body>
+</html>

@@ -9,3 +9,4 @@ env:
   server_port: 8080
  # config_server_uri: https://configserver.cf.sap.hana.ondemand.com:8080/
   config_server_uri: http://config-service-tsonyo.bosh-lite.com
+  APPLICATION_DOMAIN: string-util-service-tsonyo.bosh-lite.com

@@ -1,12 +1,12 @@
 ---
 applications:
-- name: random-words-service
-  host: random-words-service-tsonyo
+- name: hystrix-dashboard
+  host: hystrix-dashboard-tsonyo
   memory: 512M
   instances: 1
-  path: target/random-words-service-0.0.1-SNAPSHOT.jar
+  path: target/hystrix-dashboard-0.0.1-SNAPSHOT.jar
 env:
   server_port: 8080
  # config_server_uri: https://configserver.cf.sap.hana.ondemand.com:8080/
   config_server_uri: http://config-service-tsonyo.bosh-lite.com
-  APPLICATION_DOMAIN:  random-words-service-tsonyo.bosh-lite.com
+  APPLICATION_DOMAIN: hystrix-dashboard-tsonyo.bosh-lite.com
