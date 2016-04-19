@@ -44,7 +44,7 @@ public class ReservationApiGatewayRestController {
 	@HystrixCommand(fallbackMethod = "concatenateFallback")
 	@RequestMapping("/concatenate/{inputString}")
 	public String concatenate(@PathVariable String inputString, @RequestParam String otherString) {
-		String url = "http://random-words-service/concat/" + inputString + "?otherString=" + otherString;
+		String url = "http://string-util-service/concat/" + inputString + "?otherString=" + otherString;
 		ResponseEntity<String> responseEntity = this.restTemplate.exchange(url, HttpMethod.GET, null, String.class);
 		return responseEntity.getBody();
 	}
@@ -57,7 +57,7 @@ public class ReservationApiGatewayRestController {
 	@HystrixCommand(fallbackMethod = "substringFallback")
 	@RequestMapping("/substring/{inputString}")
 	public String substring(@PathVariable String inputString, @RequestParam int start, @RequestParam int end) {
-		String url = "http://random-words-service/substring/" + inputString + "?start=" + start + "&end=" + end;
+		String url = "http://string-util-service/substring/" + inputString + "?start=" + start + "&end=" + end;
 		ResponseEntity<String> responseEntity = this.restTemplate.exchange(url, HttpMethod.GET, null, String.class);
 		return responseEntity.getBody();
 	}
