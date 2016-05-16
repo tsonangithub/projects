@@ -31,7 +31,7 @@
 			var inputString=$("#inputString").val();
 			var start =$("#start").val();
 			var end =$("#end").val();
-			$.get("<%= apiGateway %>/substring/"+thisString+"?start="+start+"&end="+end).done(function(response) {
+			$.get("<%= apiGateway %>/substring/"+inputString+"?start="+start+"&end="+end).done(function(response) {
 				$("#resultSubstring").val(response);
 			});
 		}

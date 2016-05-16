@@ -16,7 +16,7 @@ import org.springframework.web.client.RestTemplate;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 
 @RestController
-// @RequestMapping("/")
+@RequestMapping("/")
 public class ReservationApiGatewayRestController {
 
 	@Autowired
@@ -49,7 +49,7 @@ public class ReservationApiGatewayRestController {
 		return responseEntity.getBody();
 	}
 
-	public String concatenateFallback() {
+	public String concatenateFallback(String inputString, String otherString) {
 		return "concatanation is unavailable right now";
 	}
 
@@ -62,7 +62,7 @@ public class ReservationApiGatewayRestController {
 		return responseEntity.getBody();
 	}
 
-	public String substringFallback() {
+	public String substringFallback(String inputString, int start, int end) {
 		return "substring is unavailable right now";
 	}
 
